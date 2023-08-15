@@ -1,0 +1,26 @@
+<!iDOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm 20 số nguyên tố đầu tiên</title>
+</head>
+<body>
+<script>
+   let a = 2;
+   let demSoNguyenTo = 0;
+   while (demSoNguyenTo !== 20) {
+       let count = 0;
+       for (let i = 1; i <= a; i++) {
+           if (a % i === 0) {
+               count ++;
+           }
+
+       } if (count <3) {
+           console.log(a);
+           demSoNguyenTo++;
+       }
+       a ++;
+   }
+</script>
+</body>
+</html>

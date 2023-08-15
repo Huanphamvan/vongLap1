@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra số chẵn và số lẻ trong 2 cặp thẻ khác nhau</title>
+</head>
+<body>
+<p id="kq"></p>
+<script>
+    // let a = +prompt('Xin vui lòng nhập vào số a :');
+    // let b = +prompt('Xin vui lòng nhập vào số b :');
+    // for (let i = a; i <= b ; i++) {
+    //     if (i % 2 === 0) {
+    //         document.write(`<h1>${i}</h1>`);
+    //     } else {
+    //         document.write(`<h5>${i}</h5>`);
+    //     }
+    //
+    // }
+
+
+
+
+    // cách thứ 2
+    let a = +prompt('Xin vui lòng nhập vào số a :');
+    let b = +prompt('Xin vui lòng nhập vào số b :');
+    let str = '';
+    for (let i = a; i <= b ; i++) {
+        if (i % 2 === 0) {
+            str += (`<h1>${i}</h1>`);
+        } else {
+            str += (`<h4>${i}</h4>`);
+        }
+    }
+    document.getElementById('kq').innerHTML= str;
+
+
+</script>
+</body>
+</html>

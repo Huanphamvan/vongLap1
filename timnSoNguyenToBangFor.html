@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm n số nguyên tố bằng vòng lặp for</title>
+</head>
+<body>
+<script>
+    // let n = +prompt('Xin vui lòng nhập n số nguyên tố mà bạn đang muốn tra cứu :');
+    // let demSoNguyenTo = 0;
+    // for (let i = 2; ; i++) {
+    //     let count = 0;
+    //     for (let j = 1; j <= i; j++) {
+    //         if (i % j === 0) {
+    //             count ++;
+    //         }
+    //     } if (count <3) {
+    //         document.write(i +'<br/>');
+    //         demSoNguyenTo ++;
+    //     } if (demSoNguyenTo === n) {
+    //         break;
+    //     }
+    // }
+
+
+
+    let n = +prompt('Xin vui lòng nhập n số nguyên tố mà bạn đang muốn tra cứu :');
+    let demSoNguyenTo = 0;
+    for (let i = 2; ; i++) {
+            let count = 0;
+        for (let j = 2; j < i; j++) {
+            if (i % j === 0) {
+                count ++;
+            }
+
+        } if (count <1) {
+            document.write(i +'<br/>');
+            demSoNguyenTo ++;
+        } if (demSoNguyenTo === n) {
+            break;
+        }
+
+    }
+
+</script>
+</body>
+</html>

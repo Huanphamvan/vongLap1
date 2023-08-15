@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra 2 số a và b</title>
+</head>
+<body>
+<p id="kq"></p>
+
+<script>
+    // let a = +prompt('Nhập vào một số a :');
+    // let b = +prompt('Nhập vào một số b :');
+    // if (a < b) {
+    //     for (let i = a; i <= b; i++) {
+    //        document.write(i + '<br>');
+    //        //  document.getElementById('inra').innerHTML = i +'<br>';
+    //     }
+    // } else if (a > b) {
+    //     for (let j = a; j >= b; j--) {
+    //         document.write(j + '<br>');
+    //     }
+    // } else {
+    //     document.write(a);
+    // }
+
+
+    // Cách thứ 2 :
+    let a = +prompt('Nhập vào một số a :');
+    let b = +prompt('Nhập vào một số b :');
+    let str = '';
+    for (let i = a; i <= b; i++) {
+        // str +=                               "<h1>" + i + "</h1>";
+        str += `<h1>${i}</h1>`;
+    }
+    document.getElementById('kq').innerHTML=str;
+</script>
+</body>
+</html>

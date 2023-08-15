@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng số lẻ, tổng số chẵn</title>
+</head>
+<body>
+<p id="kq"></p>
+<script>
+    let a = +prompt('Xin vui lòng nhập vào số nguyên dương a :');
+    let b = +prompt('Xin vui lòng nhập vào số nguyên dương b :');
+    let tongchan = 0;
+    let tongle = 0;
+    for (let i = a; i <= b ; i++) {
+        if (i % 2 === 0) {
+            tongchan += i;
+        } else {
+            tongle += i;
+        }
+    }
+    document.getElementById('kq').innerHTML= `Tổng chẵn là : ${tongchan} &nbsp;&nbsp;     Tổng lẻ là    ${tongle}`;
+</script>
+</body>
+</html>

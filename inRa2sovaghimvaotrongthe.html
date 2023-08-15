@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra 2 số và cho vào cặp thẻ h1</title>
+</head>
+<body>
+
+<script>
+    let a = +prompt('Nhập vào một số a :');
+    let b = +prompt('Nhập vào một số b :');
+    if (a < b) {
+        for (let i = a; i <= b; i++) {
+            // document.write('<h1>'+ i + '</h1>' + '<br>');
+            document.write(`<h1>${i}</h1>`);
+
+        }
+    } else if (a > b) {
+        for (let j = a; j >= b; j--) {
+            document.write('<h1>'+ j + '</h1>' + '<br>');
+        }
+    } else {
+        document.write('<h1>'+ a + '</h1>' );
+    }
+</script>
+</body>
+</html>
